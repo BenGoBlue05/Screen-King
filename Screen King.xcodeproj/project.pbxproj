@@ -21,6 +21,8 @@
 		B55A353F235EA608001D4183 /* SKClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A353E235EA608001D4183 /* SKClient.swift */; };
 		B55A3541235EA686001D4183 /* MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A3540235EA686001D4183 /* MoviesResponse.swift */; };
 		B55A3543235EA740001D4183 /* SKResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A3542235EA740001D4183 /* SKResult.swift */; };
+		CE305F2E235FAE8A00D19413 /* MovieSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE305F2D235FAE8A00D19413 /* MovieSummary.swift */; };
+		CE305F31235FAED600D19413 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE305F30235FAED600D19413 /* RxSwift */; };
 		CEB4F074235F7E1600A9DFD2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEB4F073235F7E1600A9DFD2 /* Alamofire */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,7 @@
 		B55A353E235EA608001D4183 /* SKClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKClient.swift; sourceTree = "<group>"; };
 		B55A3540235EA686001D4183 /* MoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponse.swift; sourceTree = "<group>"; };
 		B55A3542235EA740001D4183 /* SKResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKResult.swift; sourceTree = "<group>"; };
+		CE305F2D235FAE8A00D19413 /* MovieSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSummary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE305F31235FAED600D19413 /* RxSwift in Frameworks */,
 				CEB4F074235F7E1600A9DFD2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,18 +118,19 @@
 			isa = PBXGroup;
 			children = (
 				B55A3509235EA341001D4183 /* AppDelegate.swift */,
-				B55A350B235EA341001D4183 /* SceneDelegate.swift */,
-				B55A350D235EA341001D4183 /* ViewController.swift */,
-				B55A350F235EA341001D4183 /* Main.storyboard */,
 				B55A3515235EA342001D4183 /* Assets.xcassets */,
-				B55A3517235EA342001D4183 /* LaunchScreen.storyboard */,
 				B55A351A235EA342001D4183 /* Info.plist */,
-				B55A3512235EA341001D4183 /* Screen_King.xcdatamodeld */,
-				B55A353C235EA563001D4183 /* MovieTableViewCell.swift */,
-				B55A353E235EA608001D4183 /* SKClient.swift */,
+				B55A3517235EA342001D4183 /* LaunchScreen.storyboard */,
+				B55A350F235EA341001D4183 /* Main.storyboard */,
 				B55A3540235EA686001D4183 /* MoviesResponse.swift */,
-				B55A3542235EA740001D4183 /* SKResult.swift */,
+				CE305F2D235FAE8A00D19413 /* MovieSummary.swift */,
+				B55A353C235EA563001D4183 /* MovieTableViewCell.swift */,
+				B55A350B235EA341001D4183 /* SceneDelegate.swift */,
+				B55A3512235EA341001D4183 /* Screen_King.xcdatamodeld */,
 				B54B56F2235EA91C0089C10A /* Secrets.swift */,
+				B55A353E235EA608001D4183 /* SKClient.swift */,
+				B55A3542235EA740001D4183 /* SKResult.swift */,
+				B55A350D235EA341001D4183 /* ViewController.swift */,
 			);
 			path = "Screen King";
 			sourceTree = "<group>";
@@ -166,6 +171,7 @@
 			name = "Screen King";
 			packageProductDependencies = (
 				CEB4F073235F7E1600A9DFD2 /* Alamofire */,
+				CE305F30235FAED600D19413 /* RxSwift */,
 			);
 			productName = "Screen King";
 			productReference = B55A3506235EA341001D4183 /* Screen King.app */;
@@ -241,6 +247,7 @@
 			mainGroup = B55A34FD235EA341001D4183;
 			packageReferences = (
 				CEB4F072235F7E1600A9DFD2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CE305F2F235FAED600D19413 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = B55A3507235EA341001D4183 /* Products */;
 			projectDirPath = "";
@@ -292,6 +299,7 @@
 				B55A353D235EA563001D4183 /* MovieTableViewCell.swift in Sources */,
 				B55A350A235EA341001D4183 /* AppDelegate.swift in Sources */,
 				B55A350C235EA341001D4183 /* SceneDelegate.swift in Sources */,
+				CE305F2E235FAE8A00D19413 /* MovieSummary.swift in Sources */,
 				B55A3543235EA740001D4183 /* SKResult.swift in Sources */,
 				B55A3541235EA686001D4183 /* MoviesResponse.swift in Sources */,
 			);
@@ -624,6 +632,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CE305F2F235FAED600D19413 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 		CEB4F072235F7E1600A9DFD2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -635,6 +651,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE305F30235FAED600D19413 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE305F2F235FAED600D19413 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		CEB4F073235F7E1600A9DFD2 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CEB4F072235F7E1600A9DFD2 /* XCRemoteSwiftPackageReference "Alamofire" */;

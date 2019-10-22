@@ -10,7 +10,11 @@ import Foundation
 
 struct MoviesResponse : Decodable {
     
-    let results: [Model]
+    let movies: [Model]
+    
+    enum CodingKeys : String, CodingKey {
+        case movies = "results"
+    }
     
     struct Model : Decodable {
         let title: String

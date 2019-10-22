@@ -7,24 +7,29 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var movies = [MoviesResponse.Model]()
+    var movies = [MovieSummary]()
+    
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SKClient.shared.getMovies { response in
-            switch response.result {
-            case .failure(let error): print(error.errorDescription ?? "An error occurred")
-            case .success(let response):
-                self.movies = response.results
+        SKClient.shared.getMovies()
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { movies in
+                self.movies = movies
                 self.tableView.reloadData()
-            }
-        }
+            }, onError: { error in
+                print(error.localizedDescription)
+            })
+        .disposed(by: disposeBag)
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
