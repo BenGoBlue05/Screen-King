@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B54B56F3235EA91C0089C10A /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54B56F2235EA91C0089C10A /* Secrets.swift */; };
 		B55A350A235EA341001D4183 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A3509235EA341001D4183 /* AppDelegate.swift */; };
 		B55A350C235EA341001D4183 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A350B235EA341001D4183 /* SceneDelegate.swift */; };
 		B55A350E235EA341001D4183 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A350D235EA341001D4183 /* ViewController.swift */; };
@@ -16,6 +17,10 @@
 		B55A3519235EA342001D4183 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55A3517235EA342001D4183 /* LaunchScreen.storyboard */; };
 		B55A3524235EA343001D4183 /* Screen_KingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A3523235EA343001D4183 /* Screen_KingTests.swift */; };
 		B55A352F235EA343001D4183 /* Screen_KingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A352E235EA343001D4183 /* Screen_KingUITests.swift */; };
+		B55A353D235EA563001D4183 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A353C235EA563001D4183 /* MovieTableViewCell.swift */; };
+		B55A353F235EA608001D4183 /* SKClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A353E235EA608001D4183 /* SKClient.swift */; };
+		B55A3541235EA686001D4183 /* MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A3540235EA686001D4183 /* MoviesResponse.swift */; };
+		B55A3543235EA740001D4183 /* SKResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55A3542235EA740001D4183 /* SKResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B54B56F2235EA91C0089C10A /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		B55A3506235EA341001D4183 /* Screen King.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screen King.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55A3509235EA341001D4183 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B55A350B235EA341001D4183 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,10 @@
 		B55A352A235EA343001D4183 /* Screen KingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Screen KingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55A352E235EA343001D4183 /* Screen_KingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen_KingUITests.swift; sourceTree = "<group>"; };
 		B55A3530235EA343001D4183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B55A353C235EA563001D4183 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		B55A353E235EA608001D4183 /* SKClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKClient.swift; sourceTree = "<group>"; };
+		B55A3540235EA686001D4183 /* MoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponse.swift; sourceTree = "<group>"; };
+		B55A3542235EA740001D4183 /* SKResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,11 @@
 				B55A3517235EA342001D4183 /* LaunchScreen.storyboard */,
 				B55A351A235EA342001D4183 /* Info.plist */,
 				B55A3512235EA341001D4183 /* Screen_King.xcdatamodeld */,
+				B55A353C235EA563001D4183 /* MovieTableViewCell.swift */,
+				B55A353E235EA608001D4183 /* SKClient.swift */,
+				B55A3540235EA686001D4183 /* MoviesResponse.swift */,
+				B55A3542235EA740001D4183 /* SKResult.swift */,
+				B54B56F2235EA91C0089C10A /* Secrets.swift */,
 			);
 			path = "Screen King";
 			sourceTree = "<group>";
@@ -263,9 +278,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B55A3514235EA341001D4183 /* Screen_King.xcdatamodeld in Sources */,
+				B54B56F3235EA91C0089C10A /* Secrets.swift in Sources */,
 				B55A350E235EA341001D4183 /* ViewController.swift in Sources */,
+				B55A353F235EA608001D4183 /* SKClient.swift in Sources */,
+				B55A353D235EA563001D4183 /* MovieTableViewCell.swift in Sources */,
 				B55A350A235EA341001D4183 /* AppDelegate.swift in Sources */,
 				B55A350C235EA341001D4183 /* SceneDelegate.swift in Sources */,
+				B55A3543235EA740001D4183 /* SKResult.swift in Sources */,
+				B55A3541235EA686001D4183 /* MoviesResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
