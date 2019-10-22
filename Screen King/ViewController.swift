@@ -16,10 +16,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SKClient.shared.getMovies { result in
-            switch result {
-            case .error(let message):
-                print(message)
+        SKClient.shared.getMovies { response in
+            switch response.result {
+            case .failure(let error): print(error.errorDescription ?? "An error occurred")
             case .success(let response):
                 self.movies = response.results
                 self.tableView.reloadData()
